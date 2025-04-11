@@ -1,0 +1,31 @@
+# Authentication
+apiKey=REPLACE_WITH_YOUR_API_KEY
+# Optional user key
+# userKey=REPLACE_WITH_YOUR_USER_KEY
+
+# Project/Product info
+productName=your-product-name
+projectName=your-project-name
+projectVersion=1.0.0
+
+# Logging
+logLevel=info
+
+# Policy enforcement
+checkPolicies=true
+forceCheckAllDependencies=true
+
+# NPM configuration
+npm.runPreStep=true
+npm.includeDevDependencies=false
+
+# Scan behavior
+scanPackageManager=true
+scanComments=false
+
+# File filtering
+includes=**/*.js,**/*.json
+excludes=**/node_modules/**,**/dist/**,**/build/**
+
+# Determines which dependencies get updated
+updateType=ALL
