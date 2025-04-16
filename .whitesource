@@ -1,0 +1,16 @@
+{
+  "scanSettingsSAST": {
+    "enableScan": true,
+    "scanPullRequests": true,
+    "incrementalScan": false,
+    "baseBranches": ["integration"]
+  },
+  "checkRunSettingsSAST": {
+    "checkRunConclusionLevel": "failure",
+    "severityThreshold": "high"
+  },
+  "issueSettingsSAST": {
+    "issueType": "repo",
+    "minSeverityLevel": "high"
+  }
+}
