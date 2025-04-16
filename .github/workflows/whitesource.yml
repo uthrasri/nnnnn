@@ -1,0 +1,20 @@
+name: WhiteSource Security Check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  whitesource:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: WhiteSource Scan
+        uses: Mend-IO/whitesource-action@v2
+        with:
+          apiKey: ${{ secrets.WHITESOURCE_API_KEY }}
+          userKey: ${{ secrets.WHITESOURCE_USER_KEY }}
+          productName: 'my-product'
+          projectName: 'my-project'
