@@ -1,15 +1,12 @@
 {
-    "scans": {
-        "engines": [],
-        "pathExclusions": [],
-        "javaEngineGeneration": 2,
-        "csharpEngineGeneration": 2,
-        "jsEngineGeneration": 2,
-        "maxFileSize": 1024,
-        "timeouts": {
-            "perFile": 600,
-            "perLanguage": 480,
-            "perScan": 480
-        }
-    }   
+"scanSettings": {
+"baseBranches": []
+},
+"checkRunSettings": {
+"vulnerableCheckRunConclusionLevel": "failure",
+"displayMode": "diff"
+},
+"issueSettings": {
+"minSeverityLevel": "LOW"
+}
 }
